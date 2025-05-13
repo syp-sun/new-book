@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>新书预告</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>医生回忆录</title>
   <style>
     body {
-      font-family: "Microsoft YaHei", sans-serif;
-      background-color: #f9f9f9;
+      font-family: "Microsoft YaHei", "Noto Serif SC", serif;
+      background-color: #fdfaf6;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       color: #333;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
+      padding: 40px 20px;
     }
+
     h1 {
       text-align: center;
       color: #2c3e50;
+      margin-bottom: 10px;
     }
-    .book {
-      background: #fff;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    p.subtitle {
+      text-align: center;
+      color: #7f8c8d;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+
+    .book-list {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
     }
-    .book img {
-      max-width: 200px;
-      border-radius: 8px;
-      margin-right: 20px;
+
+    .book {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      max-width: 400px;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
     }
-    .book-info {
-      flex: 1;
+
+    .book:hover {
+      transform: translateY(-5px);
     }
-    .book-title {
-      font-size: 24px;
-      margin-top: 0;
+
+    .book h2 {
+      font-size: 1.4em;
+      color: #34495e;
+      margin-bottom: 10px;
     }
-    .book-desc {
-      font-size: 16px;
+
+    .book p {
       line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>即将出版的新书</h1>
+    <h1>医生回忆录</h1>
+    <p class="subtitle">两部书，记录一位医生的真实人生</p>
 
-    <div class="book">
-      <img src="book1.jpg" alt="书籍封面1">
-      <div class="book-info">
-        <h2 class="book-title">书名一：XXXX</h2>
-        <p class="book-desc">
-          本书深入探讨了……（简介内容）。适合所有对XXX感兴趣的读者。
-          <br><strong>预计出版时间：</strong>2025年X月
-        </p>
+    <div class="book-list">
+      <div class="book">
+        <h2>《第一本书的标题》</h2>
+        <p>这里是第一本书的简介内容。可以写这本书的主题，比如是关于医生早年的从医经历、面对的挑战与成长过程等。</p>
+      </div>
+      <div class="book">
+        <h2>《第二本书的标题》</h2>
+        <p>这里是第二本书的简介。比如讲述他晚年的感悟、对生命的思考，或是更私人的生活回顾与医学之外的故事。</p>
       </div>
     </div>
 
-    <div class="book">
-      <img src="book2.jpg" alt="书籍封面2">
-      <div class="book-info">
-        <h2 class="book-title">书名二：YYYY</h2>
-        <p class="book-desc">
-          本书以独特视角呈现……（简介内容）。是一部启发思考的作品。
-          <br><strong>预计出版时间：</strong>2025年X月
-        </p>
-      </div>
-    </div>
+    <footer>
+      &copy; 2025 医生回忆录 | 版权所有
+    </footer>
   </div>
 </body>
 </html>
